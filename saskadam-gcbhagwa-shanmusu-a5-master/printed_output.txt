@@ -1,0 +1,94 @@
+Adaboost
+
+No. of Stumps = 3
+('Accuracy: ', 87.91092258748674)
+Confusion Matrix:
+239 0 0 0 
+32 192 0 0 
+45 0 191 0
+37 0 0 207 
+
+
+
+nearest
+k=40
+Accuracy: 70.3075291622%
+Confusion_Matrix
+ 170  15  35  19
+  20 163  14  27
+  39  21 159  17
+  22  32  19 171
+
+python orient.py train-data.txt test-data.txt nearest 11
+k=11
+Accuracy: 70.6256627784%
+Confusion_Matrix
+ 168  19  37  15
+  22 168  11  23
+  42  23 162   9
+  20  38  18 168
+Output file= nearest_output.txt
+********************
+nearest_modified
+Confusion_Matrix
+Accuracy: 62.5662778367%
+ 158  20  40  21
+  23 141  14  46
+  52  25 140  19
+  23  53  17 151
+*****************************
+Neural Network
+
+ python orient.py train-data.txt test-data.txt nnet 30
+hidden_count= 30
+Weight Initialized for Neural Network
+Input Data read
+Train Accuracy: 69.5153613154
+Matrix:
+      6312       974      1188       770
+       712      6306      1182      1044
+      1028       615      6459      1142
+       905      1003       709      6627
+Test Accuracy: 72.0042417815
+Matrix:
+       196        15        21        12
+        27       161        21        27
+        34        21       160         9
+        35        29        13       162
+Matrix displays each row and column for 270 180 90 0 respectively.
+#Outputfile= nnet_output.txt
+****************
+NN_Best
+Weight Initialized for Neural Network Best algorithm
+Input Data read
+Train Accuracy: 73.5341843358
+Output_Matrix:
+      6730       848      1088       578
+       555      6830       749      1110
+      1058       586      6812       788
+       661      1217       548      6818
+Test Accuracy: 73.4888653234
+Output_Matrix:
+       188        15        23        18
+        18       170        17        31
+        34        23       156        11
+        16        32        12       179
+Matrix  each row and column corresponds to 270 180 90 0 respectively
+
+ python orient.py train-data.txt test-data.txt best 30
+Weight Initialized for Neural Network Best algorithm
+Input Data read
+Train Accuracy: 73.7045651233
+Output_Matrix:
+      6759       829      1087       569
+       539      6851       751      1103
+      1079       590      6814       761
+       708      1190       517      6829
+Test Accuracy: 73.3828207847
+Output_Matrix:
+       183        15        29        17
+        16       165        22        33
+        31        15       165        13
+        12        31        17       179
+Matrix  each row and column corresponds to 270 180 90 0 respectively
+Output file= best_output.txt

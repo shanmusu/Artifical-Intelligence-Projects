@@ -1,0 +1,47 @@
+Adaboost Report 
+Adaboost Tests:
+
+Number of Stumps	Test Accuracy	Time Taken
+1			67.33%		Approx 3 minutes
+2			75.50%		Approx 3 minutes
+3			84.19%		Approx 4 miutes
+4			87.38%		Approx 4 minutes
+10			90.98%		Approx 5 minutes
+50			93.00%		Approx 6 minutes
+100			93.31%		Approx 7 minutes
+500			93.676%		Approx 10 minutes
+
+
+Output:
+
+No. of Stumps = 3
+('Accuracy: ', 87.91092258748674)
+Confusion Matrix:
+239 0 0 0 
+32 192 0 0 
+45 0 191 0
+37 0 0 207
+-------------------------------------------------------------------------------------------------------
+No. of Stumps: 4
+('Accuracy: ', 88.22905620360551)
+Confusion Matrix:
+239 0 0 0
+44 180 0 0
+38 0 198 0
+29 0 0 215
+-------------------------------------------------------------------------------------------------------
+No. of Stumps: 10
+('Accuracy: ', 91.72852598091198)
+Confusion Matrix:
+239 0 0 0
+22 202 0 0
+33 0 203 0
+23 0 0 221
+No. of Stumps: 100
+
+('Accuracy: ', 93.6373276776246)
+Confusion Matrix:
+239 0 0 0
+16 208 0 0
+29 0 207 0
+15 0 0 229
